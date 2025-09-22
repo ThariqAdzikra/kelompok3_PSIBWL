@@ -62,7 +62,8 @@ Catatan Penting!!
    vendor/
    node_modules/
    .env
-4. file .env tidak akan terpush jadi copy paste .env-example lalu rename jadi .enc
+4. File .env tidak akan terpush jadi copy paste .env-example lalu rename jadi .env
+5. Jangan lupa geser project board ke in progress ketika sedang mengerjakan
 
 Pastikan .gitignore sudah benar.
 
