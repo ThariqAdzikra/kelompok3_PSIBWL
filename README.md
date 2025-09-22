@@ -1,3 +1,71 @@
+Git Workflow 
+
+Linux / MacOS (Terminal)
+1. Clone repo
+git clone https://github.com/ThariqAdzikra/kelompok3_PSIBWL.git
+cd kelompok3_PSIBWL
+
+2. Buat branch baru (misal: setup-database)
+git checkout -b (nama branch)
+
+3. Cek branch aktif
+git branch
+
+4. Tambah & commit perubahan
+git add .
+git commit -m "Pesan commit"
+
+5. Push branch ke GitHub
+git push -u origin setup-database
+
+6. Update branch dari main (jika ada update di main)
+git checkout main
+git pull origin main
+git checkout (nama branch)
+git merge main
+
+7. Buat Pull Request (PR)
+Buka GitHub → pilih branch → klik "Compare & Pull Request"
+
+Windows (PowerShell / Git Bash)
+1. Clone repo
+git clone https://github.com/ThariqAdzikra/kelompok3_PSIBWL.git
+cd kelompok3_PSIBWL
+
+2. Buat branch baru (misal: setup-database)
+git checkout -b (nama branch)
+
+3. Cek branch aktif
+git branch
+
+4. Tambah & commit perubahan
+git add .
+git commit -m "Pesan commit"
+
+5. Push branch ke GitHub
+git push -u origin setup-database
+
+6. Update branch dari main (jika ada update di main)
+git checkout main
+git pull origin main
+git checkout setup-database
+git merge main
+
+7. Buat Pull Request (PR)
+Buka GitHub → pilih branch → klik "Compare & Pull Request"
+
+Catatan Penting!!
+1. Selalu kerja di branch fitur, jangan langsung di main.
+2. Gunakan pesan commit jelas, misal:
+   git commit -m "Menambahkan migrasi tabel users"
+3. Jangan commit:
+   vendor/
+   node_modules/
+   .env
+4. file .env tidak akan terpush jadi copy paste .env-example lalu rename jadi .enc
+
+Pastikan .gitignore sudah benar.
+
 # Laravel Project
 
 ![Laravel Logo](https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg)
