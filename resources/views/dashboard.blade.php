@@ -28,7 +28,7 @@
                         <a class="nav-link" href="#">Stok</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Laporan</a>
+                        <a class="nav-link" href="laptops">Laporan</a>
                     </li>
                      <li class="nav-item">
                         <a class="nav-link" href="#">Suplier</a>
