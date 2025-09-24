@@ -1,8 +1,9 @@
-<?php
 
+<?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\LaptopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,3 +48,5 @@ Route::post('/register', [RegisterController::class, 'register'])->name('registe
 Route::get('/dashboard', function () {
     return view('dashboard'); // Langsung panggil view
 })->middleware('auth')->name('dashboard');
+
+Route::resource('laptops', LaptopController::class);
